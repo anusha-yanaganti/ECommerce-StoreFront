@@ -21,6 +21,12 @@ An interactive frontend-only e-commerce storefront built with HTML, CSS, and Jav
 - **JavaScript**:
   - Product data simulation.
   - Event listeners for interactive features like adding to cart, filtering products, and handling the checkout process.
+ 
+  
+## View the Live Demo
+
+You can view the live demo of the project here:  
+[View E-Commerce Storefront](https://anusha-yanaganti.github.io/ECommerce-StoreFront/)
 
 ## Getting Started
 
