@@ -1,0 +1,228 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full viewport height */
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333333;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #84c3af;
+    color: white;
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+header .search-bar input {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+header .cart a {
+    text-decoration: none; /* Remove underline from the link */
+}
+
+header .cart button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #2A9D8F ;
+    border-color: #333;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block; /* Ensure proper button display */
+}
+
+header .cart button:hover {
+    background-color: #2e877c;
+    color: white;
+}
+
+
+/* Filters Section */
+.filters {
+    margin: 20px;
+}
+
+.filters label {
+    margin-right: 10px;
+    
+    font-size: 1rem;
+}
+
+.filters select, .filters input {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+/* Product Grid Section */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1;  /* Ensure grid takes up remaining space */
+}
+
+.product-grid .product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-grid .product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-grid .product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-grid .product-card h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.product-grid .product-card p {
+    color: #555;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.product-grid .product-card button {
+    background-color: #2A9D8F;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.product-grid .product-card button:hover {
+    background-color: #2e877c;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #69b69d;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+/* Modal Styles */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Styled "Add to Cart" Button in Modal */
+.modal-content button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #2A9D8F;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+
+.modal-content button:hover {
+    background-color: #2e877c;
+}
+
+#price-range {
+    
+    width: 10%;
+    height: 6px;
+    border-radius: 5px;
+    
+    margin-top: 20px; /* Adjust the positioning of the bar */
+    
+}
+
+#price-range::-webkit-slider-runnable-track {
+    
+    border-radius: 5px;
+    
+}
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .search-bar input {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

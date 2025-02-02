@@ -1,0 +1,163 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #84c3af;
+    color: rgb(0, 0, 0);
+    padding: 35px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+
+header a i{
+    position: absolute;
+    left: 20px;
+    top: 80%;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    
+}
+
+.fa-arrow-left {
+    transform: scale(1.5); /* Increases the size */
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+h1, h2 {
+    margin: 2px;
+}
+
+/* Checkout Container */
+.checkout-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-container h2 {
+    margin-top: 1px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+/* Order Summary */
+#order-summary {
+    margin-bottom: 20px;
+}
+
+.order-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#order-total {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Billing Details Form */
+#checkout-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#checkout-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#checkout-form input, #checkout-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#checkout-form textarea {
+    resize: vertical;
+}
+
+#checkout-form button {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 35%;
+    align-self: center;
+    
+}
+
+#checkout-form button:hover {
+    background-color:#28a745;
+}
+
+/* Thank You Message */
+#thank-you-message {
+    text-align: center;
+    padding: 20px;
+    background-color:#9adac692;
+    color: #000000;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none;
+}
+
+#thank-you-message h2 {
+    margin-top: 0;
+}
+
+#thank-you-message a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2A9D8F;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#thank-you-message a:hover {
+    background-color: #2e877c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .checkout-container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    #checkout-form button {
+        font-size: 16px;
+    }
+
+    #checkout-form input, #checkout-form textarea {
+        font-size: 14px;
+    }
+
+    #order-total {
+        font-size: 16px;
+    }
+}
